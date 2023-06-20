@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+
+:root {
+  --primary: #daff01;
+  --secondary: #9353ff;
+  --body: #fff;
+  --text-menu: #fff;
+  --text-body: #4b4b4b;
+}
+
+:root .dark-theme {
+  --primary: #daff01;
+  --secondary: #9353ff;
+  --body: #4b4b4b;
+  --text-menu: #fff;
+  --text-body: #fff;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
