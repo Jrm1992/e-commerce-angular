@@ -1,0 +1,24 @@
+<section class="caroussel_container">
+  <div
+    class="caroussel_image-container"
+    *ngFor="let slides of this.slides; let i = index">
+    <img
+      src="{{ slides }}"
+      alt=""
+      [ngClass]="this.curActive === i ? 'active' : ''"
+      class="image-container_img" />
+  </div>
+  <div class="caroussel_btn">
+    <div class="btn_arrows">
+      <button class="arrow-left" (click)="this.prevActive()"></button>
+      <button class="arrow-right" (click)="this.nextActive()"></button>
+    </div>
+    <div class="btn_bullets">
+      <button
+        class="bullet"
+        *ngFor="let slides of this.slides; let i = index"
+        [ngClass]="this.curActive === i ? 'active' : ''"
+        (click)="this.setActive(i)"></button>
+    </div>
+  </div>
+</section>
