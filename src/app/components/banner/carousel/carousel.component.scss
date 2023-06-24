@@ -1,0 +1,91 @@
+.caroussel_container {
+  max-width: 1440px;
+  margin: auto;
+  width: 100%;
+  height: 415px;
+
+  .caroussel_image-container {
+    max-width: 1440px;
+    width: 100%;
+    height: 415px;
+    position: absolute;
+
+    .image-container_img {
+      display: none;
+      width: 100%;
+      height: 415px;
+    }
+
+    .active {
+      display: block;
+
+      @media (max-width: 425px ) {
+        img {
+          width: 100%;
+        }
+      }
+
+    }
+  }
+
+  .caroussel_btn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    .btn_arrows {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .arrow-left, .arrow-right {
+        position: absolute;
+        width: 20px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      .arrow-left {
+        left: 16px;
+        background-image: url('../../.././../assets/menu-btn/arrow.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: scaleX(-1)
+      }
+
+      .arrow-right {
+        right: 16px;
+        background-image: url('../../.././../assets/menu-btn/arrow.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .btn_bullets {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .bullet {
+        width: 12px;
+        height: 12px;
+        margin: 4px;
+        border: none;
+        border-radius: 100%;
+        background-color: black;
+        cursor: pointer;
+      }
+
+      .active {
+        background-color: var(--primary);
+      }
+    }
+  }
+
+}

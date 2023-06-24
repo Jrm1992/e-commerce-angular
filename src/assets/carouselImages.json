@@ -1,0 +1,17 @@
+{
+  "mobile": [
+    "/assets/carousel/1-375.png",
+    "/assets/carousel/2-375.png",
+    "/assets/carousel/3-375.png"
+  ],
+  "tablet": [
+    "/assets/carousel/1-768.png",
+    "/assets/carousel/2-768.png",
+    "/assets/carousel/3-768.png"
+  ],
+  "desktop": [
+    "/assets/carousel/1-1440.png",
+    "/assets/carousel/2-1440.png",
+    "/assets/carousel/3-1440.png"
+  ]
+}
