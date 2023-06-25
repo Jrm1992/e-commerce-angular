@@ -1,0 +1,6 @@
+<h3 class="categories-title">Busque por categoria:</h3>
+<section class="categories-container">
+  <div *ngFor="let item of items">
+    <app-category-card [categoryItem]="item"></app-category-card>
+  </div>
+</section>

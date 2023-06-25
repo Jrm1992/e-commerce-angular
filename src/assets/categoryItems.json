@@ -1,0 +1,26 @@
+{ "data":[
+  {
+    "itemName": "Camiseta",
+    "itemImg": "/assets/category/Camiseta.png"
+  },
+  {
+    "itemName": "Bolsa",
+    "itemImg": "/assets/category/Bolsa.png"
+  },
+  {
+    "itemName": "Calcados",
+    "itemImg": "/assets/category/Calcados.png"
+  },
+  {
+    "itemName": "Calcas",
+    "itemImg": "/assets/category/Calca.png"
+  },
+  {
+    "itemName": "Casacos",
+    "itemImg": "/assets/category/Casacos.png"
+  },
+  {
+    "itemName": "Oculos",
+    "itemImg": "/assets/category/Oculos.png"
+  }
+]}
