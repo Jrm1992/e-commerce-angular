@@ -1,0 +1,28 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 620px;
+  width: min-content;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    height: 100%;
+
+
+    .description-name, .description-value {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .card-btn {
+      place-self: flex-start;
+      margin-top: auto;
+    }
+  }
+
+}

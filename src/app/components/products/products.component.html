@@ -1,0 +1,6 @@
+<h3 class="products-title">Produtos que estão bombando!</h3>
+<section class="products-container">
+  <div *ngFor="let product of products">
+    <app-product-card [product]="product"></app-product-card>
+  </div>
+</section>
