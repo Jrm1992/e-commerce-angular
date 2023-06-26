@@ -9,6 +9,8 @@ import { CarouselComponent } from './components/banner/carousel/carousel.compone
 import { HeaderComponent } from './components/header/header.component';
 import { SearchForCategoryComponent } from './components/search-for-category/search-for-category.component';
 import { CategoryCardComponent } from './components/search-for-category/category-card/category-card.component';
+import { ProductsComponent } from './components/products/products.component';
+import { ProductCardComponent } from './components/products/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { CategoryCardComponent } from './components/search-for-category/category
     CarouselComponent,
     SearchForCategoryComponent,
     CategoryCardComponent,
+    ProductsComponent,
+    ProductCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
