@@ -1,0 +1,48 @@
+.facilities-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
+  background-color: black;
+  color: white;
+  padding: 40px;
+  gap: 32px;
+
+  .facilities-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 32px;
+    margin: auto;
+
+    @media (max-width: 768px ) {
+      flex-direction: column;
+    }
+  }
+
+  .facilities-card {
+    display: flex;
+    gap: 24px;
+
+  }
+
+  .card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+
+    .description-title {
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    .description-text {
+      font-size: 12px;
+    }
+  }
+
+}
