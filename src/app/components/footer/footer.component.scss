@@ -1,0 +1,15 @@
+.footer-container {
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  padding: 17px 23px;
+  justify-content: center;
+  gap: 10px;
+  background-color: black;
+  color: white;
+
+  @media (max-width: 425px ) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

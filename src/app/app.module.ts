@@ -12,6 +12,7 @@ import { CategoryCardComponent } from './components/search-for-category/category
 import { ProductsComponent } from './components/products/products.component';
 import { ProductCardComponent } from './components/products/product-card/product-card.component';
 import { FacilitiesComponent } from './components/facilities/facilities.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FacilitiesComponent } from './components/facilities/facilities.componen
     ProductsComponent,
     ProductCardComponent,
     FacilitiesComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
