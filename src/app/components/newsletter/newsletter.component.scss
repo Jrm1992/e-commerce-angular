@@ -1,0 +1,48 @@
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 729px;
+  margin: 40px auto;
+  border: 2px solid #000;
+  padding: 40px;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 425px) {
+    margin: 32px;
+  }
+
+  .newsletter-title {
+    text-align: center;
+  }
+
+  .newsletter-input {
+    display: flex;
+    height: 38px;
+    width: 80%;
+    justify-content: center;
+
+
+    input {
+      padding: 8px;
+      outline: none;
+      border: none;
+      border: 1px solid black;
+      border-right: none;
+
+      &:focus {
+        border: 2px solid var(--secondary);
+        border-right: none;
+      }
+    }
+
+    button {
+      background: var(--secondary);
+      color: white;
+      padding: 8px 20px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
