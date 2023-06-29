@@ -6,7 +6,17 @@
     >
   </div>
   <div class="newsletter-input">
-    <input type="text" placeholder="Digite seu email" />
-    <button>Enviar</button>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <input
+        type="text"
+        formControlName="email"
+        id="email"
+        placeholder="Digite seu email" />
+      <button type="submit">Enviar</button>
+      <div *ngIf="f?.touched" class="invalid-feedback">
+        <div *ngIf="f?.invalid">Email must be a valid email address</div>
+      </div>
+    </form>
   </div>
+  <app-modal />
 </section>
