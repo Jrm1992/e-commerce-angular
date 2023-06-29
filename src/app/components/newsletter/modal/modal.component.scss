@@ -1,0 +1,47 @@
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 700px;
+  position: fixed;
+  top: 40px;
+
+  @media (max-width: 425px) {
+    width: 320px;
+  }
+
+  .modal-header {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    align-self: stretch;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+
+    .header-title {
+      color: white;
+      font-size: 20px;
+    }
+
+    .header-close-btn {
+      button {
+        font-weight: bold;
+        font-size: 20px;
+        color: #6C757D;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .modal-content {
+    padding: 16px 16px 32px 16px;
+  }
+}
+
+.hidden {
+  display: none;
+}
