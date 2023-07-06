@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  height: 620px;
+  height: 640px;
   width: min-content;
   border: 1px solid rgba(0, 0, 0, 0.13);
 
@@ -11,17 +11,19 @@
     flex-direction: column;
     gap: 16px;
     padding: 16px;
-    height: 100%;
+    height: 260px;
 
 
     .description-name, .description-value {
       font-size: 16px;
       font-weight: bold;
+      margin-top: auto;
     }
 
     .card-btn {
       place-self: flex-start;
       margin-top: auto;
+      background-color: var(--secondary);
     }
   }
 

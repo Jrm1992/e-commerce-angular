@@ -8,13 +8,14 @@
   <div class="newsletter-input">
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
       <input
-        type="text"
+        type="email"
+        matInput
         formControlName="email"
         id="email"
         placeholder="Digite seu email" />
       <button type="submit">Enviar</button>
-      <div *ngIf="f?.touched" class="invalid-feedback">
-        <div *ngIf="f?.invalid">Email must be a valid email address</div>
+      <div *ngIf="f?.touched && f?.invalid" class="invalid-feedback">
+        Email must be a valid email address
       </div>
     </form>
   </div>

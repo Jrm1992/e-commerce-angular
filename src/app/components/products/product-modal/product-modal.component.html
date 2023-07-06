@@ -1,0 +1,51 @@
+<mat-dialog-content>
+  <mat-card>
+    <mat-card-header>
+      <div class="modal-header">
+        <div class="header-icon">
+          <img
+            src="../../../../assets/menu-btn/check-circle.svg"
+            alt="Check Icon" />
+        </div>
+        <div class="header-title">Confira detalhes sobre o produto</div>
+        <div class="header-close-btn">
+          <button mat-dialog-close>X</button>
+        </div>
+      </div>
+    </mat-card-header>
+    <div class="modal-content">
+      <div class="content-image">
+        <img mat-card-image src="{{ data.imgUrl }}" alt="{{ data.name }}" />
+      </div>
+      <div class="content-description">
+        <div class="description-header">
+          <span
+            ><strong>{{ data.name }}</strong></span
+          >
+          <p>{{ data.description }}</p>
+        </div>
+        <div class="description-price">
+          RS {{ data.price }}
+          <span>Vendido e entregue por Riachuelo</span>
+        </div>
+        <div class="description-colors">
+          <label>Cores:</label>
+          <mat-radio-group>
+            <mat-radio-button *ngFor="let color of data.colors">
+              {{ color }}
+            </mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <div class="description-sizes">
+          <label>Tamanho:</label>
+          <mat-radio-group>
+            <mat-radio-button *ngFor="let size of data.sizes">
+              {{ size }}
+            </mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <button mat-flat-button>Adicionar à sacola</button>
+      </div>
+    </div>
+  </mat-card>
+</mat-dialog-content>
