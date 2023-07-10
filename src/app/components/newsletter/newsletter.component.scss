@@ -20,12 +20,10 @@
   .newsletter-input {
     display: flex;
     width: 80%;
-    height: 38px;
     justify-content: center;
     align-items: center;
 
     input {
-      height: 32px;
       padding: 8px;
       outline: none;
       border: none;
@@ -33,7 +31,7 @@
       border-right: none;
 
       &:focus {
-        border: 2px solid var(--secondary);
+        border: 1px solid var(--secondary);
         border-right: none;
       }
     }
@@ -44,6 +42,7 @@
       padding: 8px 20px;
       border: none;
       cursor: pointer;
+      border: 1px solid var(--secondary)
     }
 
     .invalid-feedback {

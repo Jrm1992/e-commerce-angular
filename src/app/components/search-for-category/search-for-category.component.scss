@@ -6,6 +6,13 @@
   justify-content: center;
   gap: 16px;
 
+
+  ::ng-deep .card-container:hover {
+    scale: 1.05;
+    transition: all 0.3s;
+    }
+
+
   @media (min-width: 768px ) {
     padding: 0 60px;
   }

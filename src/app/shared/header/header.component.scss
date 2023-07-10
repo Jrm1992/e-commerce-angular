@@ -48,6 +48,11 @@
     .header_search_input {
       width: 170px;
       padding: 4px;
+      outline: none;
+
+      &:focus {
+        outline: 1px solid var(--primary);
+      }
 
       @media (max-width: 768px ) {
         width: 145px;
