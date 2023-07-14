@@ -6,6 +6,13 @@
   width: min-content;
   border: 1px solid rgba(0, 0, 0, 0.13);
 
+  .image-container {
+    img {
+      width: 350px;
+      height: 422px;
+    }
+  }
+
   .description-container {
     display: flex;
     flex-direction: column;
